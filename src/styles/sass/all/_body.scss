@@ -1,0 +1,31 @@
+body {
+    font-family: 'TT Lakes';
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1120px;
+        max-height: 535px;
+    }
+
+    .body__section {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+    }
+
+    .body__window {
+        order: 2;
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        max-height: 535px;
+    }
+}

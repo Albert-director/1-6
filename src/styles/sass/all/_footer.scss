@@ -1,0 +1,106 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    gap: 16px;
+    margin-bottom: 19px;
+
+    &__team,
+    &__policy,
+    &__info {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #7E7E82;
+        padding: 0;
+        margin: 0;
+        font-family: "TT Lakes", sans-serif;
+    }
+
+    &__team-text {
+        margin: 0;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        @media (min-width: 500px) {
+            margin: 0;
+            font-family: "TT Lakes", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: left;
+        }
+    }
+
+    &__policy {
+        text-align: center;
+    }
+
+    &__policy-link {
+        margin: 0;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #7E7E82;
+
+        @media (min-width: 500px) {
+            margin: 0;
+            font-family: "TT Lakes", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+
+    &__info-text {
+        margin: 0;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+
+        @media (min-width: 500px) {
+            margin: 0;
+            font-family: "TT Lakes", sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: 400px) {
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (min-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 25px;
+        margin-bottom: 21px;
+    }
+
+    @media (min-width: 1121px) {
+        padding-right: 33px;
+        padding-left: 33px;
+        padding-bottom: 21px;
+    }
+}

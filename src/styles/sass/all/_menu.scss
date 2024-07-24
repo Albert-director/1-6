@@ -1,0 +1,33 @@
+  .menu {
+      transform: translateX(-120vw);
+      transition: transform 200ms ease-in-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      min-height: 100vh;
+      box-shadow: 0px 0 50px 15px rgba(14, 24, 80, 0.2);
+
+      &--open {
+          transform: translateX(0);
+      }
+
+      &__window {
+        left: 310px;
+        top: 0;
+        width: 320px;
+        margin: 0;
+        padding: 0;
+        font-family: 'TT Lakes';
+        background-color: #fff;
+        height: 100%;
+        min-height: 100vh;
+      }
+
+
+      @media (min-width: 1024px) {
+          position: static;
+          transform: translate(0);
+          box-shadow: none;
+      }
+  }

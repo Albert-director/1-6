@@ -1,0 +1,44 @@
+.check {
+    margin-left: 16px;
+    margin-bottom: 40.02px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    &__paragraf {
+        max-width: 421px;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        margin-right: 16px;
+        margin-top: 16px;
+
+        @media (min-width: 768px) {
+            margin-top: 24px;
+
+        }
+
+        @media (min-width: 1121px) {
+            margin-top: 32px;
+        }
+    }
+
+    &__button-container {
+        text-decoration: none;
+        color: #1B1C21;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid transparent;
+    }
+
+    &__button-container:hover {
+        cursor: pointer;
+        border: 1px solid #B8FFEC;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+}

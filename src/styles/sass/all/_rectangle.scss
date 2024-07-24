@@ -1,0 +1,117 @@
+.rectangle {
+
+    &-pagination__swiper-pagination {
+        position: static;
+    }
+
+    &__swiper-slide {
+        height: 158px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+        list-style-type: none;
+        margin-top: 16px;
+        border: 1px solid transparent;
+    }
+
+    &__swiper-slide:hover {
+        cursor: pointer;
+        border: 1px solid #B8FFEC;
+    }
+
+    &__button-container {
+        display: none;
+        border: 1px solid transparent;
+        margin-left: 16px;
+        width: 140px;
+        margin-top: 16px;
+    }
+
+    &__button-container:hover {
+        border: 1px solid #B8FFEC;
+        background-color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &__swiper {
+        margin: 0;
+        padding: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &__swiper-wrapper {
+        margin: 0;
+        padding: 0;
+        max-height: 180px;
+        transition: max-height 200ms ease-in-out;
+    }
+
+    &__swiper-wrapper-open {
+        max-height: 580px;
+    }
+
+    &-pagination {
+        padding-left: 58px;
+        padding-top: 16px;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .rectangle__button-container {
+        display: flex;
+    }
+
+    .rectangle-pagination__swiper-pagination {
+        display: none;
+    }
+
+    .rectangle__swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 24px;
+    }
+}
+
+@media (min-width: 700px) {
+    .rectangle-pagination__swiper-pagination {
+        display: none;
+    }
+
+    .rectangle__swiper-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .rectangle-pagination__swiper-pagination {
+        display: none;
+    }
+
+    .rectangle__swiper-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+    }
+}
+
+@media (min-width: 1121px) {
+    .rectangle-pagination__swiper-pagination {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .rectangle__swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px 32px;
+    }
+
+}
